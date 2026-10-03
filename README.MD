@@ -10,7 +10,15 @@ A completely localized, production-ready Retrieval-Augmented Generation (RAG) ba
 
 ## 📦 Setup & Installation
 
-1. Create a virtual environment and activate it:
+    Create a virtual environment and activate it:
    ```bash
    python3 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+   python main.py --ingest
+   python main.py --chat
+
+<ElicitationsGroup message="Here are a few ways to extend this architecture further:">
+  <Elicitation label="Add a Streamlit web UI" query="How can I wrap this Python RAG backend in a Streamlit web interface?"/>
+  <Elicitation label="Enable GPU acceleration" query="How do I modify this code to properly leverage CUDA/GPU acceleration for the LLM and Embeddings?"/>
+</ElicitationsGroup>
